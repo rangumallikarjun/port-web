@@ -1,0 +1,333 @@
+ /* nav bar */
+ 
+ #menu {
+     background-color: rgb(54, 54, 54);
+     height: 80px;
+     margin: 0%;
+     display: flexbox;
+     justify-content: space-around;
+     flex-direction: row;
+     justify-content: end;
+     text-align: right;
+     padding-top: 20px;
+ }
+ 
+ #menu li {
+     display: inline;
+     flex-direction: row;
+     justify-content: end;
+     padding-right: 50px;
+ }
+ 
+ #menu li a {
+     color: #fff;
+     text-decoration: none;
+     font-size: 20px;
+ }
+ 
+ .btn-contact {
+     text-align: center;
+     text-decoration: none;
+     font-size: 16px;
+     padding: 10px 10px;
+     cursor: pointer;
+     border-radius: 10px;
+     background-color: rgb(74, 74, 74);
+     color: gold;
+     border: 3px solid gold;
+ }
+ 
+ .nav-link {
+     font-weight: bold;
+     font-size: 20px;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: gold;
+     padding: 10px;
+     margin-top: 1px;
+     display: inline-block;
+     position: relative;
+     opacity: 80%;
+ }
+ 
+ .nav-link:hover {
+     opacity: 1;
+ }
+ 
+ .nav-link::before {
+     transition: 300ms;
+     height: 5px;
+     content: "";
+     position: absolute;
+     background-color: gold;
+ }
+ 
+ .nav-link-ltr::before {
+     width: 0%;
+     bottom: -1px;
+ }
+ 
+ .nav-link-ltr:hover::before {
+     width: 80%;
+ }
+ 
+ .nav-link-fade-up::before {
+     width: 100%;
+     bottom: 5px;
+     opacity: 0;
+ }
+ 
+ .nav-link-fade-up:hover::before {
+     bottom: 10px;
+     opacity: 1;
+ }
+ 
+ .nav-link-grow-up::before {
+     height: 0%;
+     width: 100%;
+     bottom: 0px;
+ }
+ 
+ .nav-link-grow-up:hover::before {
+     height: 5px;
+ }
+ 
+ .avatar-img {
+     filter: grayscale(70%);
+     opacity: 100%;
+     transition: 0.5s;
+     cursor: pointer;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     flex-wrap: wrap;
+     width: 515px;
+ }
+ 
+ img:hover {
+     filter: grayscale(0%);
+ }
+ 
+ #img-resize {
+     width: 600px;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+ }
+ 
+ #home-text {
+     display: flex;
+     position: absolute;
+     flex-direction: column;
+     flex-wrap: wrap;
+     width: 550px;
+     height: 350px;
+     margin-left: 800px;
+     bottom: 120px;
+ }
+ 
+ .typing-area .typing-h2 {
+     position: relative;
+     font-size: 21px;
+     font-weight: 550;
+     padding-left: 5px;
+ }
+ 
+ .typing-ani {
+     color: gold;
+ }
+ 
+ .text-1 {
+     color: gold;
+     font-size: 45px;
+ }
+ 
+ .mallik-text {
+     position: relative;
+     font-size: 32px;
+     font-weight: 400;
+     letter-spacing: -2px;
+     word-spacing: 6px;
+ }
+ 
+ .intro-text {
+     position: relative;
+     font-size: 45px;
+     font-weight: 400;
+     word-spacing: -14px;
+ }
+ 
+ .btn-resume {
+     display: flex;
+     flex-direction: column;
+     position: absolute;
+     padding: 30px 90px 6px 25px;
+     text-align: center;
+     display: inline-block;
+     cursor: pointer;
+     border-radius: 10px;
+     background-color: rgb(74, 74, 74);
+     color: gold;
+     border: 3px solid gold;
+     margin-top: 15px;
+ }
+ 
+ .arrow-btn {
+     position: relative;
+     display: inline-flex;
+     flex-direction: column;
+     font-weight: 600;
+     color: gold;
+     font-size: 20px;
+     margin-top: 25px;
+     margin-left: 15px;
+ }
+ 
+ .bi-1 {
+     display: flexbox;
+     flex-wrap: wrap;
+     position: absolute;
+     margin-top: 300px;
+     top: 110px;
+     left: 1425px;
+     background: #353231;
+     color: #f8f9fa;
+     width: 36px;
+     height: 36px;
+     border-radius: 50%;
+     border: 3.3px solid #f8f9fa;
+     box-shadow: 0 0 12px 0 rgb(54, 50, 50);
+     transition: 250ms;
+ }
+ 
+ .bi-2 {
+     display: flexbox;
+     flex-wrap: wrap;
+     position: absolute;
+     margin-top: 300px;
+     top: 160px;
+     left: 1425px;
+     background: #353231;
+     color: #f8f9fa;
+     width: 36px;
+     height: 36px;
+     border-radius: 50%;
+     border: 3.3px solid #f8f9fa;
+     box-shadow: 0 0 12px 0 rgb(54, 50, 50);
+     transition: 250ms;
+ }
+ 
+ .bi-3 {
+     display: flexbox;
+     flex-wrap: wrap;
+     position: absolute;
+     margin-top: 300px;
+     top: 210px;
+     left: 1425px;
+     background: #353231;
+     color: #f8f9fa;
+     width: 36px;
+     height: 36px;
+     border-radius: 50%;
+     border: 3.3px solid #f8f9fa;
+     box-shadow: 0 0 12px 0 rgb(54, 50, 50);
+     transition: 250ms;
+ }
+ 
+ .bi-4 {
+     display: flexbox;
+     flex-wrap: wrap;
+     position: absolute;
+     margin-top: 300px;
+     top: 260px;
+     left: 1425px;
+     background: #353231;
+     color: #f8f9fa;
+     width: 36px;
+     height: 36px;
+     border-radius: 50%;
+     border: 3.3px solid #f8f9fa;
+     box-shadow: 0 0 12px 0 rgb(54, 50, 50);
+     transition: 250ms;
+ }
+ 
+ .bi-instagram:hover {
+     opacity: 100%;
+     color: #E1306C;
+     border-color: #E1306C;
+ }
+ 
+ .bi-github:hover {
+     opacity: 100%;
+     color: #000000;
+     border-color: #000000;
+ }
+ 
+ .bi-linkedin:hover {
+     opacity: 100%;
+     color: #0A66C2;
+     border-color: #0A66C2;
+ }
+ 
+ .bi-whatsapp:hover {
+     opacity: 100%;
+     color: #25D366;
+     border-color: #25D366;
+ }
+ 
+ #social-media-tags {
+     display: flex;
+     position: absolute;
+     width: 60px;
+     height: 250px;
+     margin-left: 1420px;
+     bottom: 80px;
+ }
+ 
+ #social-media-tags div {
+     position: relative;
+     display: flex;
+     right: 1415px;
+     bottom: 380px;
+ }
+ /*media query mobile */
+ 
+ @media all and (max-width: 480px) {
+     #img-resize {
+         width: 400px;
+         height: 400px;
+         display: flex;
+         flex-direction: column;
+         margin-top: 80px;
+     }
+     #img-resize .avatar-img {
+         width: 400px;
+         height: 400px;
+     }
+     .btn-contact {
+         margin-top: 15px;
+     }
+     #home-text {
+         display: flex;
+         font-size: .05px;
+         top: 600px;
+         margin-left: 20px;
+         padding: 0%;
+     }
+     #home-text .text-1 {
+         display: flex;
+         font-size: 30px;
+         animation: none;
+     }
+     #home-text .centered-2 {
+         margin-top: 30px;
+     }
+     #home-text {
+         width: 380px;
+     }
+     #social-media-tags {
+         display: flex;
+         right: -40px;
+         top: 750px;
+     }
+ }
